@@ -1,40 +1,78 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400&display=swap');
 
 * {
-  padding: 0;
-  border: 0;
   margin: 0;
+  border: 0;
+  padding: 0;
 }
 
 body {
-  background: rgb(131,58,180);
-  background-color: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  background-image: url(/card/Glass\ morphism.png);
+  background-size: cover;
 }
 
-#img-bg {
+.card-container {
   position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.description {
-  font-family: 'Roboto', sans-serif;
-  color: #FFFF;
-  position: absolute;
-    top: 24vh;
-    left: 20vh;
-  padding: 2vh;
-}
-
-.card {
-  position: absolute;
-    top: 20vh;
-    left: 125vh;
-  border: 1px groove rgba(255,255,255, .25);
-  width: 206px;
-  height: 330px;
+    left: 48vh;
+    top: 28vh;
+  background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.0));
+  border: 1.5px solid rgba(255,255,255,0.2); 
+  width: 425px;
+  height: 250px;
   border-radius: 40px;
-  background:
-    linear-gradient(rgba(255,255,255, 0.25), rgba(255,255,255, 0.0));
   backdrop-filter: blur(20px);
 }
+
+.card-container h4 {
+  color: #fefefe;
+  position: absolute;
+    top: 2vh;
+    left: 5vh;
+    font-size: 1.25em;
+}
+
+.card-container p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 3vh;
+  color: #fefefe;
+  position: absolute;
+  top: 30vh;
+  left: 5vh;
+}
+
+#mastercard-icon {
+  width: 8vh;
+  position: absolute;
+    left: 56vh;
+    top: 30vh;
+}
+
+#contactless-icon {
+  width: 3vh;
+  position: absolute;
+    left: 59vh;
+    top: 5.5vh;
+}
+
+#chip-icon {
+  width: 6vh;
+  position: absolute;
+    left: 3.5vh;
+    top: 4vh;
+}
+
+.card-container h4 {
+  position: inherit;
+    top: 31.36vh;
+}
+
+#card-number {
+  position: inherit;
+  top: 25vh;
+  font-family: 'Inconsolata', monospace;
+
+}
+
